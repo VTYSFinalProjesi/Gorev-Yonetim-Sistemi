@@ -1,0 +1,76 @@
+:root {
+
+    --cadet-blue-crayola: hsl(240, 10%, 70%);
+    --altinsarisi: hsl(50, 100%, 54%);
+    --gokyuzu_mavisi: hsl(196, 84%, 63%);
+    --gece_mavisi: hsl(231, 83%, 25%);
+    --acik_sari: hsl(50, 100%, 64%);
+    --mor_gri: hsl(225, 24%, 27%);
+    --turuncu: hsl(7, 96%, 61%);
+    --uzay_mavisi: hsl(243, 23%, 18%);
+    --pembe: hsl(353, 83%, 65%);
+    --koyu_mavi: hsl(230, 9%, 13%);
+    --acik_mavi: hsl(222, 88%, 55%);
+    --acik_mor: hsl(230, 52%, 63%);
+    --gri: hsl(254, 7%, 65%);
+    --kirmizi: hsl(2, 85%, 35%); /*sayfa renkleri ayarlanıyor.*/
+    --siyah: hsl(0, 0%, 0%);
+    --beyaz: hsl(0, 0%, 100%);
+  
+  
+  
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-barlow: 'Barlow', sans-serif;  /* yazı tipleri */
+    --ff-poppins: 'Poppins', sans-serif;
+  
+  
+  
+    --radius-5: 5px;
+    --radius-10: 10px;
+    --radius-15: 15px;    /* etrafının egimi */
+    --radius-20: 20px;
+  
+  
+    --fs-1: 6.4rem; 
+    --fs-2: 3.5rem; /* yazı boyutu */
+    --fs-3: 3.6rem;
+    --section-padding: 80px;
+  
+    --shadow: 0 -5px 10px var(--gri); /* sayfa asagı kayarken beyaz ısıkla ayırmayı saglar */
+  
+  
+  
+    --transition-1: 0.05s ease;
+    --transition-2: 0.25s ease;     /* butonların tepki verme suresini ayarlar */
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+  
+}
+
+body{
+    background-color: rgb(214, 116, 119);
+}
+
+.tbl-full{
+    width: 100%;
+    margin: 15px auto;
+}
+table tr th{
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 1%;
+    padding-top: 3%;
+}
+table tr td{
+    padding: 1%;
+}
+.container{
+    background: #fff;
+    width: 540px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, .5);
+    border-radius: 25px;
+    font-family: var(--ff-barlow);
+}

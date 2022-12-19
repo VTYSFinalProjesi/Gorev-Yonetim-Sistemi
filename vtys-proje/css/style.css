@@ -1,0 +1,205 @@
+:root {
+
+    --cadet-blue-crayola: hsl(240, 10%, 70%);
+    --altinsarisi: hsl(50, 100%, 54%);
+    --gokyuzu_mavisi: hsl(196, 84%, 63%);
+    --gece_mavisi: hsl(231, 83%, 25%);
+    --acik_sari: hsl(50, 100%, 64%);
+    --mor_gri: hsl(225, 24%, 27%);
+    --turuncu: hsl(7, 96%, 61%);
+    --uzay_mavisi: hsl(243, 23%, 18%);
+    --pembe: hsl(353, 83%, 65%);
+    --koyu_mavi: hsl(230, 9%, 13%);
+    --acik_mavi: hsl(222, 88%, 55%);
+    --acik_mor: hsl(230, 52%, 63%);
+    --gri: hsl(254, 7%, 65%);
+    --kirmizi: hsl(2, 85%, 35%); /*sayfa renkleri ayarlanıyor.*/
+    --siyah: hsl(0, 0%, 0%);
+    --beyaz: hsl(0, 0%, 100%);
+  
+  
+  
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-barlow: 'Barlow', sans-serif;  /* yazı tipleri */
+    --ff-poppins: 'Poppins', sans-serif;
+  
+  
+  
+    --radius-5: 5px;
+    --radius-10: 10px;
+    --radius-15: 15px;    /* etrafının egimi */
+    --radius-20: 20px;
+  
+  
+    --fs-1: 6.4rem; 
+    --fs-2: 3.5rem; /* yazı boyutu */
+    --fs-3: 3.6rem;
+    --section-padding: 80px;
+  
+    --shadow: 0 -5px 10px var(--gri); /* sayfa asagı kayarken beyaz ısıkla ayırmayı saglar */
+  
+  
+  
+    --transition-1: 0.05s ease;
+    --transition-2: 0.25s ease;     /* butonların tepki verme suresini ayarlar */
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+  
+  }
+  
+  
+  
+  *,
+  *::before,
+  *::after {/*sayfa kenarlarını ayarlar */
+    margin: 0; 
+    padding: 0;
+  }
+  /*a {
+    text-decoration: none;  linklerin altı cizili olmamasını saglar. 
+    color: inherit;
+  }*/
+  
+
+.navbar  {/* anasayfa blog, kısımlarının halledilmistir */
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding-inline: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-2);
+    background-color:  rgb(214, 116, 119);
+  }
+  
+  
+  
+  .navbar-link {/* koyu beyaz olmasını saglar listenin*/
+    color: var(--beyaz);
+    font-family: var(--ff-barlow);
+    padding-block: 3px;
+    transition: var(--transition-1);
+  }
+  
+  .navbar-link:is(:hover, :focus) { color: var(--turuncu); }
+  
+  .navbar .btn {
+    background-color: var(--turuncu);
+    margin-block-start:15px;
+  }
+
+a {
+    text-decoration: none; /* linklerin altı cizili olmamasını saglar. */
+    background-color: antiquewhite;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-barlow);
+    background-color: rgb(214, 116, 119);
+}
+
+.wrapper{
+    border: 1px solid red;
+    width: 70%;
+    height: 350;
+    margin: 100 auto;
+    border-radius: 5px;
+    padding: 2%;
+    background-color:  antiquewhite;
+}
+
+h1{
+    color: black;
+    font-family: var(--ff-barlow);
+    margin-bottom: 2%;
+    background-color:  antiquewhite;
+}
+h3{
+    font-family: var(--ff-barlow);
+    margin: 2% 0;
+    background-color:  antiquewhite;
+    text-decoration: none;
+}
+
+.menu{
+    margin-bottom: 2%;
+    background-color: antiquewhite;
+}
+
+.menu a{
+    font-weight: bold;
+    margin-right: 1%;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.btn-primary{
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    font-family: var(--ff-barlow);
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.all-tasks{
+    border-radius: 15px;
+}
+
+
+.btn-primary:hover{
+    background-color: #dc71d5;
+}
+
+.btn-secondary{
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.btn-secondary:hover{
+    background-color: #dc71d5;
+}
+
+.btn-lg{
+    width: 50%;
+    
+}
+
+
+.tbl-full{
+    width: 100%;
+    margin: 15px auto;
+    overflow-y: auto;
+    background-color:  rgb(214, 116, 119);
+    border-radius: 15px ;
+}
+
+table tr th{
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 1%;
+    padding-top: 3%;
+}
+
+table tr td{
+    padding: 1%;
+    color: black;
+}
+
+.tbl-half{
+    width: 40%;
+    color: black;
+}
